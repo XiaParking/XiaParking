@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/ionicon/css/ionicons.min.css">
+
+	    <!-- Google fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" rel="stylesheet">
+
+	    <!-- Owl Carousel Assets -->
+	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+	    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+		<!-- Custom  Design assets -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	
+
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/media.css"> -->
+			<title>XiaParking</title>
+	</head>
+	
+	<style>
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.center1 {
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+}
+
+</style>
+
+	<body>
+
+	
+	<!-- It's for the click in body -->
+		<!-- <div class="overlay" id="overlay" onclick="closeNav()"></div> -->
+		<!-- This menu will be shown after scrolling -->
+
+		 <nav id="nav" class="custom-menu navbar navbar-inverse navbar-fixed-top">
+			    <div class="container">
+				    <div class="col-md-6 col-xs-6 craft-bar">
+							<a href="index.html"><img></a>
+					</div>
+	                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 craft-bar text-right">
+	                    <div class="main" id="main">
+	                      <a onclick="openNav()">
+								<img class="zoom-act" src="assets/icon/menu.png">
+							</a>
+	                    </div> 
+	                </div>
+				</div>
+			</nav>  
+			<!--This is the sidenav bar  -->
+			<div id="mySidenav" class="sidenav text-center">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+                <a href="#head">Inicio</a><hr>
+				<a href="#funcionalidades">Funcionalidades</a><hr>
+                <a href="#explore">Sobre</a><hr>
+                <a href="#user-interface">User-interface</a><hr>
+				<a href="#newsletter">Contato</a>              
+            </div>
+		<!-- Head section taking full device height -->
+		<section id="head" class="head">
+		    <div class="blur">   <!-- Blur div is for bluring the bacground image -->
+				<div class="container">
+					<!-- <div class="row menu-bar"> 
+						<div class="col-md-6 col-xs-6">
+							<a href="index.html"><img src="assets/icon/logo.png"></a>
+						</div>
+						<div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+		                    <div class="main" id="main">
+		                      <a onclick="openNav()">
+									<img src="assets/icon/menu.png">
+								</a>
+		                    </div> 
+		                </div>
+					</div> -->
+					<div class="row head-body">
+						<div class="col-md-7 col-xs-12 head-items" class="w3-container w3-myfont">						
+							<p class="w3-xxlarge">XiaParking</p>
+							<p class=" fun-text">Dificuldade para encontrar vagas?</p>
+							
+							<a href="#" class="btn craft-btn">
+								<span class="fa fa-android"></span>
+								<div class="craft-btn-content">
+									<h6>Download para</h6>
+									<h4>Android</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<img class="img-responsive" src="assets/img/2.png">	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- This is the feature section after the head-->
+		<section id="funcionalidades" class="section feature-section">
+			<div class="container">
+				<div class="row">
+				<!-- Individual block is an individual section one feature -->
+					<div class="col-md-3 col-xs-6 feature-block">
+						<div class="icon-circle"> <!-- Only the icon and the circle  -->
+							<i class="ion-bookmark"></i>
+						</div>
+						<!-- <i class="fa fa-download fa-2x icon"></i> -->
+						<h3>Salvar</h3>
+						<p>
+						Salve os estacionamentos que você mais gostou
+								</p>
+					</div>
+					<div class="col-md-3 col-xs-6 feature-block">
+					<div class="icon-circle"> <!-- Only the icon and the circle  -->	
+						<i class="ion-android-search"></i>
+						</div>
+						<h3>Buscar</h3>
+						<p>
+							Busque para encontrar as vagas mais proximas e mais baratas perto de você
+						</p>
+					</div>
+					<div class="col-md-3 col-xs-6 feature-block">
+						<div class="icon-circle"> <!-- Only the icon and the circle  -->
+							<i class="ion-clipboard"></i>
+						</div>
+						<h3>Filtro</h3>
+						<p>
+							Filtre os estacionamentos do jeito que você quiser
+						</p>
+					</div>
+					<div class="col-md-3 col-xs-6 feature-block">
+						<div class="icon-circle"> <!-- Only the icon and the circle  -->
+							<i class="ion-coffee"></i>
+						</div>
+						<h3>DEDICATED SUPPORT</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- This is explore mind craft section -->
+		<section id="explore" class="section explore-mindcraft">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 zoom-act">
+						<img class="img-responsive" src="assets/img/girl.png">
+					</div>
+					<div class="col-md-3 col-xs-6 zoom-act">
+						<img class="img-responsive" src="assets/img/jhon.png">
+					</div>
+					<div class="col-md-6 col-xs-12 explore">
+							<h2>Sobre XiaParking</h2>
+							<p>
+								Nosso aplicativo te ajuda a encontrar vagas de estacionamento, a partir de sensores instalados nas vagas.
+								Você poderá visualizar todas as vagas disponíveis, podendo estacionar em uma vaga à sua escolha.							
+							</p>
+							
+							<a href="#" class="btn craft-btn">
+								<span class="fa fa-android"></span>
+								<div class="craft-btn-content">
+									<h6>Download para</h6>
+									<h4>Android</h4>
+								</div>
+							</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Section for the simple user interface -->
+		<section id="user-interface" class="section user-interface">
+			<div class="container">
+				<h2>Telas do Aplicativo</h2>
+				<div class="row">
+					<div class="center">
+						<img class="img-responsive" src="assets/img/triple.png">
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- This is the newsletter section -->
+		<section id="newsletter" class="newsletter">
+			<div class="blur">
+				<div class="container">
+					<h2>Contato</h2>
+					<div class="row newsletter-form">
+				  		<form class="form-inline">
+						    <div class="form-group">
+							   <input type="email" class="form-control" id="email" placeholder="Email">
+							   <br><br>
+								<p><input type="text" class="form-control" id="nome" placeholder="Nome"></p>	
+								<br>
+								<p><input rows="6" type="text" class="form-control" id="menssagem" placeholder="Menssagem" required="mensagem"></p>
+								
+								
+								<button type="submit" class="btn btn-default">Enviar</button>
+						    </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer section -->
+		<section class="footer">
+			<div class="container">
+					<div class="row">
+						<div class="center1">
+							<img class="img-responsive" src="assets/icon/red-logo.png">
+						</div>
+						
+					</div>
+			</div>
+		</section>
+
+	    <!-- Javascript files -->
+
+		<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js" ></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Carousel script file -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Custom script file -->
+		<script type="text/javascript" src="assets/js/main.js" ></script>
+	</body>
+</html>
