@@ -25,8 +25,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	
-	
+		
+		
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
 
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/media.css"> -->
 			<title>XiaParking</title>
@@ -47,7 +50,7 @@
 
 .right {
     position: absolute;
-	top:   155% ;
+	top:   159% ;
     right: 12%;
     width: 38%;
     padding: 5px;
@@ -58,6 +61,16 @@
     background-color: white;
     color: black;
     border: 1px solid #555555;
+}
+
+.nomefonte { 
+font-family: 'Oleo Script', cursive;
+font-size: 80px;
+}
+
+.nomefonte2 { 
+font-family: 'Alef', sans-serif;
+font-size: 30px;
 }
 
 </style>
@@ -87,6 +100,7 @@
 			<div id="mySidenav" class="sidenav text-center">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
                 <a href="#head">Inicio</a><hr>
+				<a href="#funcionalidades">Funcionalidades</a><hr>
                 <a href="#explore">Sobre</a><hr>
 				<a href="#newsletter">Contato</a>              
             </div>
@@ -108,8 +122,9 @@
 					</div> -->
 					<div class="row head-body">
 						<div class="col-md-7 col-xs-12 head-items" class="w3-container w3-myfont">						
-							<p class="w3-xxlarge">XiaParking</p>
-							<p class=" fun-text">Dificuldade para encontrar as vagas?</p>
+							<p class="nomefonte">XiaParking</p>
+							<p class="nomefonte2">Dificuldade para encontrar as vagas?</p>
+							<p class="nomefonte2">Nós te ajudamos</p>
 							
 							<a href="#" class="btn craft-btn">
 								<span class="fa fa-android"></span>
@@ -127,9 +142,13 @@
 			</div>
 		</section>
 		<!-- This is the feature section after the head-->
-		<section id="explore" class="section feature-section">
+		<section id="funcionalidades" class="section feature-section">
 			<div class="container">
 				<div class="row">
+				<div align="center">
+				<h2>Nossas Funcionalidades</h2>
+				</div>
+				<br><br>
 				<!-- Individual block is an individual section one feature -->
 					<div class="col-md-3 col-xs-6 feature-block">
 						<div class="icon-circle"> <!-- Only the icon and the circle  -->
@@ -161,11 +180,11 @@
 					</div>
 					<div class="col-md-3 col-xs-6 feature-block">
 						<div class="icon-circle"> <!-- Only the icon and the circle  -->
-							<i class="ion-coffee"></i>
+							<i class="ion-android-favorite-outline"></i>
 						</div>
-						<h3>DEDICATED SUPPORT</h3>
+						<h3>Acessibilidade</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+							Simples e fácil de usar
 						</p>
 					</div>
 				</div>
@@ -192,7 +211,7 @@
 							</a>
 							
 					</div>
-					<div class="right">
+					<div id="logo" class="right">
 						<img class="right" src="assets/img/logo.png">
 					</div>
 				</div>
