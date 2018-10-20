@@ -1,0 +1,106 @@
+
+
+.card{
+    width: 100%;
+    padding: 15px;
+    margin-top:20%;
+    background-color: rgba(255,255,255,0.2);
+    color: #000;
+    font-size:15px;
+    
+    }
+    .btn
+    {   
+        font-size:20px;
+        margin-top:25px;
+        color: #84bd00; 
+        border-color: #84bd00;
+    }
+    
+    .btn>c.whitep
+    {   
+    
+    
+        color: #FFFFFF; 
+    
+    }
+    .btn:hover
+    { 
+        color: #FFFFFF;
+        background-color: #84bd00;
+        border-color: #84bd00;
+    }
+    
+    .btn.facebook
+    {
+        color: #3B5998; 
+        border-color: #3B5998;
+    }
+    .btn.facebook:hover
+    { 
+        color: #FFFFFF;
+        background-color: #3B5998;
+        border-color: #3B5998;
+    }
+    
+    .btn.google
+    {
+        color: #DB4437; 
+        border-color: #DB4437;
+    }
+    .btn.google:hover
+    { 
+        color: #FFFFFF;
+        background-color: #DB4437;
+        border-color: #DB4437;
+    }
+    .full
+    {
+    width:100%;
+    
+    }
+    
+    
+    input
+    {
+        color: #000 !important;
+        background-color: rgba(0,0,0,0) !important;
+        border-color: #000 !important;
+    
+    }
+    input:focus{
+        box-shadow: inset 0 1px 1px rgba(132, 189, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.5) !important;
+        
+    }
+    
+    body
+    {
+        background: url('../img/login-background.jpg') center center no-repeat fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+    }
+    img
+    {
+    width:100%;
+    height:100%;
+    
+    
+    }
+    i{
+    height:10px;
+    
+    padding:3px;
+    
+    }
+    .mensagem{
+    
+        color: #FFFFFF;
+    }
+    
+    .mensagem>a{
+        color: #84bd00;
+    
+    }

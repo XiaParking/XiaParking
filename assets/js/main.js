@@ -23,7 +23,7 @@ $(document).ready(function(){
              $("#nav").css("background-color", "black");
          }
         else{
-        $("#nav").css("background-color", "transparent");
+        $("#nav").css("background-color", "rgba(0,0,0,0.3)");
     }
     });
 

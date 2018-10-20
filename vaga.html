@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/ionicon/css/ionicons.min.css">
+
+	    <!-- Google fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" rel="stylesheet">
+
+	    <!-- Owl Carousel Assets -->
+	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+	    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+		<!-- Custom  Design assets -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+
+
+	
+	<link rel="shortcut icon" href="assets/img/ico.ico" />
+
+
+	<title>XiaParking</title>
+	<style>
+		.center {
+			margin: auto;
+			width: 50%;
+			padding: 10px;
+		}
+		
+		.center2 {
+			margin: left;
+			width: 65%;
+			padding: 6px;
+		}
+		
+		.right {
+			position: absolute;
+			top:   159% ;
+			right: 12%;
+			width: 38%;
+			padding: 5px;
+		}
+		
+		
+		.button5 {
+			background-color: white;
+			color: black;
+			border: 1px solid #555555;
+		}
+		
+		.nomefonte { 
+		font-family: 'Oleo Script', cursive;
+		font-size: 100px;
+		}
+		
+		.nomefonte2 { 
+		font-family: 'Alef', sans-serif;
+		font-size: 30px;
+		}
+		
+		 #map {
+				height: 600px;
+				width: 100%;
+			   }
+		.vaga{
+padding: 0.1px;
+		}
+		#dadoss{
+            background-image: url("assets/img/asphalt.jpg");
+            height: 100%;
+			width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+			z-index: 2000!important;
+
+
+		}
+		.modal-body{
+			background-image: url("assets/img/asphalt.jpg");
+			position: absolute;
+            width: 100%;
+			background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+
+
+		}
+		.modal-footer{}
+
+		.slinput input {
+  padding:10px;
+  width:100%;
+  border:1px solid #ccc;
+  padding-left:31px;
+  padding-right:30px;
+  color:black;
+  font-family: arial,sans-serif;
+  font-size: 16px;
+}
+
+.slinput input::-ms-clear {
+    display: none;
+}
+.slinput input:focus {
+  border:1px solid #4d90fe;
+}
+
+
+.slinput .left-icon {
+  position:absolute;
+  left:10px;
+  top:13px;
+}
+.slinput .fa {
+  color:#444;
+  font-size: 16px;
+}
+.slinput .fa-close {
+  color:#ccc;
+}
+
+
+.slinput .right-icon {
+  position:absolute;
+  right:10px;
+  top:13px;
+  cursor:pointer;
+}
+.slinput {
+  position:relative;
+  width:100%;
+  margin-bottom:7px;
+}
+* {
+  box-sizing:border-box;
+}
+body {
+  background-color:#e9eaed;
+}
+
+.user {
+  padding:10px;
+  margin-top:5px;
+  background-color:white;
+  border: 1px dotted #aaa;
+  transition: 2s ease-in;
+}
+
+.user .media-left img {
+  width:52px;
+}
+	
+		
+		</style>
+		
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
+		<script>
+		  var config = {
+			apiKey: "AIzaSyB_OqI_kHhxlVKOyAhcox7CEiAzA0ustkU",
+			authDomain: "xiaparking.firebaseapp.com",
+			databaseURL: "https://xiaparking.firebaseio.com",
+			projectId: "xiaparking",
+			storageBucket: "xiaparking.appspot.com",
+			messagingSenderId: "1027768823785"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+	</head>
+<body>
+
+	
+
+
+		<nav id="nav" class="custom-menu navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href= index.html>XiaParking</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href= index.html>Inicio</a></li>
+						<li><a href="#funcionalidades">Funcionalidades</a></li>
+							<li><a href= vaga.html>Encontre sua Vaga</a></li>
+											<li><a href="#explore">Sobre</a></li>
+							<li><a href="#newsletter">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+						</nav>
+            
+
+		<section id="vaga"  align="center" class="section feature-section">
+			<div class="container">
+				<div class="row">
+				<div class="nomefonte" align="center">
+				<h1>Encontre sua Vaga !!!</h1>
+				</div>
+				<br><br>
+                <div class="row newsletter-form">
+
+						  <br>
+						  
+						  
+						
+						  <div class="slinput">
+							<i class="fa fa-search left-icon"></i> 
+							<input type="text" id="searchInput" onkeyup="searchUsers()" placeholder="Procure o estacionamento dentre os abaixo"/> 
+							<i class="fa fa-close right-icon"></i>
+						 </div>
+						  
+						 <div id="users">
+						 </div>
+
+				
+						  <div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog modal-lg">
+							  <div class="modal-content">
+
+								<div class="modal-header">
+									<p id="modalnome" style="font-size: 20px;"></p>
+								  <button type="button" class="close" data-dismiss="modal">&times;</button>
+								  
+								</div>
+								<div class="modal-body">
+										<div id="data"></div>
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							  </div>
+							  
+							</div>
+				
+
+              </div>
+				</div>
+			</div>
+		</section>
+
+		<section id="newsletter" class="head1">
+
+				<div class="container">
+					<div class="row newsletter-form">
+				  		<form class="form-inline">
+						    <div class="form-group">
+
+						    </div>
+						</form>
+					</div>
+				</div>
+			
+		</section>
+
+		
+	<script>
+	$('input#procestacionamento').quicksearch('table#tabela tbody tr');
+	</script>
+
+		<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js" ></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="app.js"></script>
+
+		<script type="text/javascript" src="assets/js/main.js" ></script>
+
+	</body>
+</html>

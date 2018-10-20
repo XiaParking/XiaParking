@@ -31,7 +31,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
 
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/media.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+
+
+	<link rel="shortcut icon" href="assets/img/ico.ico" />
+
+
 			<title>XiaParking</title>
 	</head>
 	
@@ -73,75 +87,78 @@ font-family: 'Alef', sans-serif;
 font-size: 30px;
 }
 
+ #map {
+        height: 600px;
+        width: 100%;
+       }
+	   .borda {
+            border: 2px #fff solid
+        }
+
+
+
+        .caixa {
+
+
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.68);
+            margin-bottom: 45px;
+
+        }
+		.largura2 {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
 </style>
 
 	<body>
-
 	
-	<!-- It's for the click in body -->
-		<!-- <div class="overlay" id="overlay" onclick="closeNav()"></div> -->
-		<!-- This menu will be shown after scrolling -->
-
 		 <nav id="nav" class="custom-menu navbar navbar-inverse navbar-fixed-top">
-			    <div class="container">
-				    <div class="col-md-6 col-xs-6 craft-bar">
-							<a href="index.html"><img></a>
-					</div>
-	                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 craft-bar text-right">
-	                    <div class="main" id="main">
-	                      <a onclick="openNav()">
-								<img class="zoom-act" src="assets/icon/menu.png">
-							</a>
-	                    </div> 
-	                </div>
-				</div>
-			</nav>  
-			<!--This is the sidenav bar  -->
-			<div id="mySidenav" class="sidenav text-center">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
-                <a href="#head">Inicio</a><hr>
-				<a href="#funcionalidades">Funcionalidades</a><hr>
-                <a href="#explore">Sobre</a><hr>
-				<a href="#newsletter">Contato</a>              
-            </div>
-		<!-- Head section taking full device height -->
+<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">XiaParking</a>
+    </div>
+
+      <ul class="nav navbar-nav">
+        <li><a href="#head">Inicio</a></li>
+			<li><a href="#funcionalidades">Funcionalidades</a></li>
+				<li><a href="vaga.html">Encontre sua Vaga</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+				<li><a href="#newsletter">Contato</a></li>
+      </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="loginregistro.php"><span class="glyphicon glyphicon-user"></span> Área Restrita</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+	
+	
 		<section id="head" class="head">
-		    <div class="blur">   <!-- Blur div is for bluring the bacground image -->
+		    <div class="blur">   
 				<div class="container">
-					<!-- <div class="row menu-bar"> 
-						<div class="col-md-6 col-xs-6">
-							<a href="index.html"><img src="assets/icon/logo.png"></a>
-						</div>
-						<div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
-		                    <div class="main" id="main">
-		                      <a onclick="openNav()">
-									<img src="assets/icon/menu.png">
-								</a>
-		                    </div> 
-		                </div>
-					</div> -->
-					<div class="row head-body">
-						<div class="col-md-7 col-xs-12 head-items" class="w3-container w3-myfont">						
+
+					<div align="center" class="row head-body">
+						<div class="col-md-12 col-xs-12 head-items" class="w3-container w3-myfont">						
 							<p class="nomefonte">XiaParking</p>
 							<p class="nomefonte2">Dificuldade para encontrar as vagas?</p>
 							<p class="nomefonte2">Nós te ajudamos</p>
 							
-							<a href="#" class="btn craft-btn">
-								<span class="fa fa-android"></span>
-								<div class="craft-btn-content">
-									<h6>Download para</h6>
-									<h4>Android</h4>
-								</div>
-							</a>
+
 						</div>
-						<div class="col-md-4 col-xs-12">
-							<img class="img-responsive" src="assets/img/2.png">	
-						</div>
+						
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- This is the feature section after the head-->
+	
 		<section id="funcionalidades" class="section feature-section">
 			<div class="container">
 				<div class="row">
@@ -149,104 +166,118 @@ font-size: 30px;
 				<h2>Nossas Funcionalidades</h2>
 				</div>
 				<br><br>
-				<!-- Individual block is an individual section one feature -->
-					<div class="col-md-3 col-xs-6 feature-block">
-						<div class="icon-circle"> <!-- Only the icon and the circle  -->
-							<i class="ion-bookmark"></i>
+			
+					<div class="col-md-4 col-xs-12 ">
+					<div align="center">
+						<div class="icon-circle"> 
+							<i class="ion-android-star-outline"></i>
 						</div>
-						<!-- <i class="fa fa-download fa-2x icon"></i> -->
-						<h3>Salvar</h3>
+						
+						<h3>Favoritos</h3>
 						<p>
-						Salve os estacionamentos que você mais gostou
+						nao vai ter
 								</p>
+								</div>
 					</div>
-					<div class="col-md-3 col-xs-6 feature-block">
-					<div class="icon-circle"> <!-- Only the icon and the circle  -->	
+					<div class="col-md-4 col-xs-12 ">
+					<div align="center">
+					<div class="icon-circle"> 	
 						<i class="ion-android-search"></i>
 						</div>
 						<h3>Buscar</h3>
 						<p>
 							Busque estacionamentos para achar a melhor vaga para você
 						</p>
+						</div>
 					</div>
-					<div class="col-md-3 col-xs-6 feature-block">
-						<div class="icon-circle"> <!-- Only the icon and the circle  -->
-							<i class="ion-clipboard"></i>
+					<div class="col-md-4 col-xs-12 ">
+					<div align="center">
+						<div class="icon-circle"> 
+							<i class="ion-funnel"></i>
 						</div>
 						<h3>Filtro</h3>
 						<p>
 							Filtre os estacionamentos do jeito que você quiser
 						</p>
-					</div>
-					<div class="col-md-3 col-xs-6 feature-block">
-						<div class="icon-circle"> <!-- Only the icon and the circle  -->
-							<i class="ion-android-favorite-outline"></i>
 						</div>
-						<h3>Acessibilidade</h3>
-						<p>
-							Simples e fácil de usar
-						</p>
 					</div>
+					
 				</div>
 			</div>
 		</section>
-		<!-- This is explore mind craft section -->
-		<section id="explore" class="section explore-mindcraft">
-			<div  class="container">
-				<div align="center" class="row">
-				
-					<div class="col-md-12 col-xs-12 explore">
-							<h2>Sobre XiaParking</h2>
-							<p>
-								Nosso aplicativo te ajuda a encontrar vagas de estacionamento, a partir de sensores instalados nas vagas.</p>
-								Você poderá visualizar todas as vagas disponíveis, podendo estacionar em uma vaga à sua escolha.	</p>						
-							</p>
-							
-							<a href="#" class="btn craft-btn">
-								<span class="fa fa-android"></span>
-								<div class="craft-btn-content">
-									<h6>Download para</h6>
-									<h4>Android</h4>
-								</div>
-							</a>
-							
-					</div>
-					<div id="logo" class="right">
-						<img class="right" src="assets/img/logo.png">
-					</div>
-				</div>
-			</div>
-		</section>
+
+
 		
-		<!-- This is the newsletter section -->
+		
+		
+		
+		<section id="sobre" class="section explore-mindcraft">
+			<div align = "center" class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12 explore">
+							<h2>Sobre XiaParking</h2>
+							<br>
+							<p>
+								Nosso site te ajuda a encontrar vagas de estacionamento, a partir de sensores instalados nas vagas.</p>
+							<p> E nele os usuários podem visualizar todas as vagas disponíveis, podendo estacionar em uma vaga à sua escolha.</p>
+							
+					</div>
+				</div>
+			</div>
+		</section>
+	
+
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+
+		
+	
 		<section id="newsletter" class="newsletter">
 			<div class="blur">
 				<div class="container">
+
+                <div class="row text-center largura2">
 					<h2>Contato</h2>
 					<div class="row newsletter-form">
-				  		<form class="form-inline">
+				  		<form name="formulario" action="contato.php" method="post" class="form-inline">
 						    <div class="form-group">
-							   <p><input type="email" class="form-control" id="email" placeholder="Email"></p>
+									
+
+							   <p><input type="email" class="form-control" id="email" name="email" placeholder="Email" required></p>
 							   <br>
-								<p><input type="text" class="form-control" id="nome" placeholder="Nome"></p>	
+								<p><input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required></p>	
 								<br>
-								<p><input rows="6" type="text" class="form-control" id="mensagem" placeholder="Mensagem" required="mensagem"></p>
+								<p><input rows="6" type="text" class="form-control input-text text-area" rows="5" name="mensagem" id="mensagem" placeholder=" Deixe sua mensagem" required ></p>
 								<br>
-								<p><button type="submit" class="button button5">Enviar</button></p>
-						    </div>
+								<p><button type="submit" class="btn btn-info butao">Enviar</button></p>
+							</div>
 						</form>
 					</div>
 				</div>
-			</div>
+				</div>
+			
 		</section>
 		
-	    <!-- Javascript files -->
+	    
 
 		<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js" ></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		<!-- Carousel script file -->
+		
 		<script src="assets/js/owl.carousel.min.js"></script>
-		<!-- Custom script file -->
+		
+		
 		<script type="text/javascript" src="assets/js/main.js" ></script>
 	</body>
 </html>
